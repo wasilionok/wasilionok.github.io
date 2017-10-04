@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>formularz kontaktowy</title>
 </head>
 <body>
     <form action="https://formspree.io/agnieszka@wasilionok.pl" method="POST"> 
@@ -16,7 +16,7 @@
         <input type="text" name="numer" id="number"><br/>
         
         <label for="wybierz miasto"> wybierz miasto:</label><br/>
-        <select>
+        <select  is="wybierz miasto"><br/>
             <option value="Kraków">Kraków</option>
             <option value="Warszawa">Warszawa</option>
             <option value="Gdańsk">Gdańsk</option>
@@ -27,14 +27,7 @@
           <input type="radio" name="gender" value="female">mężczyzna<br>
          </p>
          
-
-        <p>wybierz płeć:</p><br/>
-        <label for="male">male</label><br/>
-        <input type="radio" name="ganger" id="male" >mężczyzna<br/>
-        <label for="female">female</label><br/>
-        <input type="radio" name="ganger" id="female" value="female">kobieta<br/>
-
-        <label for="zgoda">Zgoda na dane osobowe:</label><br/>
+         <label for="zgoda">Zgoda na dane osobowe:</label><br/>
         <input type="checkbox" name="zgoda" id="zgoda" value="tak">tak<br/>
         <label for="message"> wiadomość:</label><br/>
         <textarea maxlength="1000" id="message"></textarea><br/>
