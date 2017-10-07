@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>formularz kontaktowy</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <form action="https://formspree.io/agnieszka@wasilionok.pl" method="POST"> 
-        <label for="imie">Imię:</label><br/>
-        <input type="text" name="imie" id="imie"><br/>
-        <label for="nazwisko">Nazwisko:</label><br/>
-        <input type="text" name="nazwisko" id="nazwisko"><br/>
-        <label for="e-mail"> e-mail:</label><br/>
-        <input type="text" name="e-mail" id="e-mail"><br/>
-        <label for="number"> numer telefonu:</label><br/>
-        <input type="text" name="numer" id="number"><br/>
+        <label for="imie">Imię:</label>
+        <input type="text" name="imie" id="imie">
+        <label for="nazwisko">Nazwisko:</label>
+        <input type="text" name="nazwisko" id="nazwisko">
+        <label for="email"> e-mail:</label>
+        <input type="text" name="email" id="email">
+        <label for="number"> numer telefonu:</label>
+        <input type="text" name="numer" id="number">
         
         <label for="miasto"> wybierz miasto:</label><br/>
         <select  id="miasto">
@@ -21,11 +22,15 @@
             <option value="Warszawa">Warszawa</option>
             <option value="Gdańsk">Gdańsk</option>
          </select>
-         <p>
-         <a>wybierz płeć:</a><br/>
-          <input type="radio" name="gender" value="male" checked>kobieta<br>
-          <input type="radio" name="gender" value="female">mężczyzna<br>
-         </p>
+         
+        <fieldset>
+            <legend>Płeć:</legend><br>
+            <input type="radio" name="plec" id="kobieta" value="kobieta">
+            <label for="kobieta">Kobieta</label><br>
+            <input type="radio" name="plec" id="mezczyzna" value="mezczyzna">
+            <label for="mezczyzna">Mężczyzna</label><br><br>
+
+            </fieldset>
          
          <label for="zgoda">Zgoda na dane osobowe:</label><br/>
         <input type="checkbox" name="zgoda" id="zgoda" value="tak">tak<br/>
