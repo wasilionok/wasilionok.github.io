@@ -1,0 +1,18 @@
+* {
+    font-family: verdana;
+    margin: 0;
+}
+
+#header{
+        background-size: cover;
+        background-position: center;
+        position: relative;
+}
+
+.naglowek1, 
+.naglowek2{
+    text-transform: uppercase;
+}
+.pic{
+    position: absolute;
+}

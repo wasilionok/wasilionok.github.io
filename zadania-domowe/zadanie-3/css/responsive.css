@@ -1,0 +1,79 @@
+
+
+    @media all and (min-width:1170px) {
+        
+        #header{
+            background-image: url(../obrazy/man-1.jpg);
+            height: 100vh;
+        }
+        .tekst{
+            text-align: left;
+        }
+        .naglowek1{
+            font-size: 20px;
+            color: #fff;     
+        }
+        .naglowek2{
+            font-size: 30px;
+            color: #fff;
+        }
+        .pic{
+            margin-left:33px;
+            top: 50%;
+        }
+    }
+    @media all and (max-width: 1170px) {
+        
+        #header{
+            background-image: url(../obrazy/man-2.jpg);
+            height: 70vh;
+            }
+        .tekst{
+            text-align: left;
+        }
+        .naglowek1{
+            font-size: 20px;
+            color: #fff;     
+        }
+        .naglowek2{
+            font-size: 30px;
+            color: #fff;
+        }
+        .pic{
+            margin-left: 55%;
+            top: 15%;
+        }
+    }
+
+
+    @media all and (max-width: 992px) {
+       
+        #header{
+            background-image: url(../obrazy/man-1.jpg);
+            height: 50vh;
+        }
+        .tekst{
+            text-align: center;
+        }
+        .naglowek1{
+            font-size: 20px;
+            color: #000;     
+        }
+        .naglowek2{
+            font-size: 30px;
+            color: #000;
+        }
+        .pic{
+            margin-top: 3%;
+            top: 100%;
+            margin-left:0;
+            width: 100%;
+        }
+    }
+    
+
+    
+  
+    
+
+    
