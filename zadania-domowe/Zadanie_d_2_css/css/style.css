@@ -4,13 +4,13 @@ body {
     font-weight: 500;
 }
 
-figure {	
+figure{	
     width: 50%;
     position: relative;
     margin: 30px auto;	
 }
 
-figure::before {
+figure::before{
     content: ' '; 
     border: 1px solid #fff;  
     position: absolute; 
@@ -18,7 +18,8 @@ figure::before {
     border-bottom: none; 
     transition: all 1s linear;
 }
-figure::after {
+
+figure::after{
     content: ' '; 
     border: 1px solid #fff;  
     position: absolute;  
@@ -26,7 +27,7 @@ figure::after {
     border-top: none; top: 100%; 
     transition: all 1s linear;
 }
-figure:hover:before {
+figure:hover:before{
     content: ' '; 
     border: 1px solid #000;  
     position: absolute; 
@@ -34,7 +35,7 @@ figure:hover:before {
     height: 50%; 
     border-bottom: none;
 }
-figure:hover:after {
+figure:hover:after{
     content: ' '; 
     border: 1px solid #000;  
     position: absolute;  
