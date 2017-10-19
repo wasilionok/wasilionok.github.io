@@ -6,24 +6,24 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-   <div action="https://formspree.io/agnieszka@wasilionok.pl" method="POST">
+   <form action="https://formspree.io/agnieszka@wasilionok.pl" method="POST">
        <p class="tekst1">A Simple Form</p>
        <p class="tekst2"> Form Fundamentals</p>
-   </div>
+  
    
-    <fieldset >
-       <legend>Customer info:</legend><br>
-        <label for="imie">Name:</label>
-        <input type="text" name="Name:" id="name" size="40" placeholder="Enter your name" required ><br/><br/>
-       <label for="number"> Telephone:</label>
-        <input type="text" name="Telephone:" id="numer" size="40" placeholder="Patterm: 234-567-891" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required ><br/><br/>
-        <label for="email"> Email address:</label>
-        <input type="text" name="Email address:" id="email" size="40" placeholder="Enter your email address" required ><br/><br/> 
-    </fieldset>
-    
-     <fieldset>
-        <legend>Books:</legend><br>
-         <select name="ilosc">
+<fieldset>
+    <legend>Customer info:</legend><br>
+    <label for="imie">Name:</label>
+    <input type="text" name="Name:" id="name" size="40" placeholder="Enter your name" required><br/><br/>
+    <label for="number"> Telephone:</label>
+    <input type="text" name="Telephone:" id="numer" size="40" placeholder="Patterm: 234-567-891" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required><br/><br/>
+    <label for="email"> Email address:</label>
+    <input type="text" name="Email address:" id="email" size="40" placeholder="Enter your email address" required><br/><br/>
+</fieldset>
+
+<fieldset>
+    <legend>Books:</legend><br>
+    <select name="ilosc">
 	            <option selected="selected"></option>
 	            <option>Sąsiedzi</option>
 	            <option>Masza i niedźwieć</option>
@@ -31,10 +31,10 @@
 	            <option>Strażak sam </option>
 	            <option>Myszka Miki</option>
             </select>
-        
-        <label for="imie"> Quanity(Maximum5)</label>
 
-            <select name="ilosc">
+    <label for="imie"> Quanity(Maximum5)</label>
+
+    <select name="ilosc">
 	            <option selected="selected"></option>
 	            <option>1</option>
 	            <option>2</option>
@@ -42,9 +42,11 @@
 	            <option>4</option>
 	            <option>5</option>
             </select>
-    </fieldset>
-    <div>
+</fieldset>
+<div>
     <input type="submit" value="Submit">
-    </div>
+</div>
+ </form>
 </body>
+
 </html>
