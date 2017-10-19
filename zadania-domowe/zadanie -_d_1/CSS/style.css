@@ -1,0 +1,15 @@
+*{
+   font-family: lato;
+}
+.tekst1{
+    color: blue;
+}
+.tekst2{
+    color: cornflowerblue;
+    font-style: italic;
+}
+fieldset{
+    display: block;
+    padding-left:40px;
+}
+ 
