@@ -1,52 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
+
 <body>
-   <form action="https://formspree.io/agnieszka@wasilionok.pl" method="POST">
-       <p class="tekst1">A Simple Form</p>
-       <p class="tekst2"> Form Fundamentals</p>
-  
-   
-<fieldset>
-    <legend>Customer info:</legend><br>
-    <label for="imie">Name:</label>
-    <input type="text" name="Name:" id="imie" size="40" placeholder="Enter your name" required><br/><br/>
-    <label for="number"> Telephone:</label>
-    <input type="text" name="Telephone:" id="number" size="40" placeholder="Patterm: 234-567-891" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required><br/><br/>
-    <label for="email"> Email address:</label>
-    <input type="text" name="Email address:" id="email" size="40" placeholder="Enter your email address" required><br/><br/>
-</fieldset>
+    <form action="https://formspree.io/agnieszka@wasilionok.pl" method="POST">
+        <p class="tekst1">A Simple Form</p>
+        <p class="tekst2"> Form Fundamentals</p>
 
-<fieldset>
-    <legend>Books:</legend><br>
-    <select name="ilosc">
-<!--	            <option selected="selected"> ksiazka</option>-->
-	            <option>Sąsiedzi</option>
-	            <option>Masza i niedźwieć</option>
-	            <option>Bolek i Lolek</option>
-	            <option>Strażak sam </option>
-	            <option>Myszka Miki</option>
-            </select>
 
-    <label for="imie"> Quanity(Maximum5)</label>
+        <fieldset>
+            <legend>Customer info:</legend><br>
+            <label for="imie">Name:</label>
+            <input type="text" name="Name:" id="imie" size="40" placeholder="Enter your name" required autofocus><br/><br/>
+            <label for="number"> Telephone:</label>
+            <input type="text" name="Telephone:" id="number" size="40" placeholder="Patterm: 234-567-891" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required><br/><br/>
+            <label for="email"> Email address:</label>
+            <input type="text" name="Email address:" id="email" size="40" placeholder="Enter your email address" required multiple><br/><br/>
+        </fieldset>
 
-    <select name="ilosc">
-	            <option selected="selected">1</option>
-	            <option>1</option>
-	            <option>2</option>
-	            <option>3</option>
-	            <option>4</option>
-	            <option>5</option>
-            </select>
-</fieldset>
-<div>
-    <input type="submit" value="Submit">
-</div>
- </form>
+        <fieldset>
+            <legend>Books:</legend><br>
+
+
+
+            <input list="books" name="boks">
+            <datalist id="books">
+    <option value="Sąsiedzi">
+    <option value="Masza i niedźwieć">
+    <option value="Bolek i Lolek">
+    <option value="Strażak sam">
+    <option value="Myszka Miki">
+          </datalist>
+
+            <label for="imie"> Quanity(Maximum5)</label>
+            <input type="number" name="liczba" min="1" max="5">
+
+        </fieldset>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
 </body>
 
 </html>
