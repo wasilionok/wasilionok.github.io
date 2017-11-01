@@ -9,6 +9,4 @@ function pobierzDane() {
         console.log(data);
     });
 
-
-
 }
