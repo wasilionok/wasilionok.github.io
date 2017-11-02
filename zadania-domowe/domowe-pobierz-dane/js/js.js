@@ -4,7 +4,7 @@
 function pobierzDane() {
 $(document).ready(function () {
     $('button').after("<div id='dane-programisty'></div>");
-    $.getJSON('http://echo.jsontest.com/imie/Piotr/nazwisko/Lewinski/zawod/Programista/firma/Akademia108', function (data) {
+    $.getJSON('https://akademia108.pl/kurs-front-end/ajax/1-pobierz-dane-programisty.php', function (data) {
         document.getElementById('dane-programisty').innerHTML = data.firma + "<br/>" + data.imie + "<br/>" + data.nazwisko + "<br/>" + data.zawod;
         console.log(data);
     });
