@@ -26,8 +26,10 @@ section h2{
 }
 
 
+
 section{
-    padding: 30px 50px;
+
+    padding: 0 60px 100px;
 }
 /*nav*/
 #main-nav{
@@ -71,36 +73,7 @@ section{
 
 
 
-/*
-#menu{
-    background-color: #fff;
-    height: 50px;
-    position: fixed;
-    text-align: right;
-    width: 100%;
-    z-index: 1;
 
-}
-#menu .toggle, [id='drop']{
-    display: none;
-}
-#menu ul{
-    margin: 0px;
-    list-style-type: none;
-    background-color: #fff;
-    
-}
-#menu ul .menu-item {
-    display: inline-block;
-    line-height: 50px;
-    margin: 0 20px;
-       
-}
-#menu ul .menu-item a{
-    color:#1ac056;
-    text-decoration: none;
-}
-*/
     
 #main-header {
     height: 80vh;
@@ -137,17 +110,13 @@ section{
 /*absolut*/
 
 #about{
-/*    text-align: center;*/
     background-color: #F9FCFE;
-    overflow: hidden;
-/*    box-shadow: 10px 10px 62px -10px rgba(0,0,0,0.75);*/
-    
+    overflow: hidden; 
 }
 
 #about figure{
     width: 318px;
-    height: 356px
-/*    float: left;*/
+    height: 356px;
     margin: 0 auto;
     text-align: center;
     display: block;
@@ -155,14 +124,9 @@ section{
 
 }
 
-/*
-#about >article{
-    width: 50%;
-    float:left;
-}
-*/
+
 #about figure img{
-/*    max-height: 350px;*/
+    max-height: 350px;
     border:14px solid #fff;
     border-radius: 15px;
     width: 100%;
@@ -185,17 +149,18 @@ section{
 }
 
 #portfolio #portfolio-item-1{
-    background-image: url(../img/portfolio1.jpg)
+    background-image: url(../img/portfolio1.jpg);
+    width: 100%;
         
 }
-
-
 #portfolio #portfolio-item-2{
-    background-image: url(../img/portfolio2.jpg)
+    background-image: url(../img/portfolio2.jpg);
+    width: 100%;
         
 }
 #portfolio #portfolio-item-3{
-    background-image: url(../img/portfolio4.jpg)
+    background-image: url(../img/portfolio4.jpg);
+    width: 100%;
         
 }
 #portfolio .portfolio-items{
@@ -210,6 +175,7 @@ section{
     display: inline-block;
     width: 33%;
     position: relative;
+    display: inline-block;
 }
 #portfolio .portfolio-items .portfolio-item .item-mask{
     background-color: rgba(42, 62, 79, 0.8);
@@ -247,80 +213,88 @@ section{
 #portfolio .portfolio-items .portfolio-item .item-mask .item-content .item-content-inner a:hover{
     color: #1ac056
 }
+
+#portfolio .col-md-6, #portfolio .col-md-12{padding: 0;}
 /*contakt*/
-#contact{
-    background-color: #213b50;
+
+#contact {
+    background-color: #213B50;
     color: #fff;
     overflow: hidden;
 }
-#contact .contact-data{
-    width: 50%;
-    float: left;
-}
 
-#contact .contact-data h2{
+ #contact h2 {
     text-align: left;
     font-size: 38px;
-
 }
-#contact .contact-data address {
+
+#contact .contact-form {
+    margin-top: 100px;
+}
+
+#contact input:not([type='submit']),
+#contact textarea {
+    border: 0 solid;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #2b4a64;
+    border: #2b4a64 0px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#contact .contact-form input:focus,
+#contact .contact-form textarea: focus {
+    background-color: #426684;
+}
+
+#contact input[type='submit'] {
+    background-color: #1ac056;
+    border: 0 solid #1ac056;
+    color: #fff;
+    transition: all .3s;
+    cursor: pointer;
+    border-radius: 2px;
+    float: left;
+    padding: 15px;
+}
+
+#contact input[type='submit']:hover {
+    background-color: #fff;
+    color: #1ac056;
+}
+
+#contact address {
     font-style: normal;
     margin: 72px 0;
     line-height: 25px;
+    
+    
 }
 
-#contact .contact-data address a{
+#contact a {
     color: #1ac056;
 }
-#contact .contact-data .contact-social-icons a{
+
+#contact .contact-social-icons a {
     display: inline-block;
-    color: #fff;
     height: 38px;
     width: 38px;
-    text-align: center;
+text-align: center;
     line-height: 38px;
     border: 1px solid #fff;
     margin-right: 30px;
     font-size: 22px;
-}
-
-#contact .contact-data .contact-social-icons a:hover{
-    color: #213b50;
-    border: 1px solid #213b50;
-    background-color:  #fff;
-}
-#contact .contact-form{
-    width:50%;
-    float: left;
-    margin-top: 100px;
-}
-#contact .contact-form input,
-#contact .contact-form form textarea{
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 15px;
-    background-color: #2b4a64;
-    border: #2b4264 0px;
-    color: #fff;
-}
-#contact .contact-form input:focus,
-#contact .contact-form form textarea:focus{
-    background-color: #426684;
-}
-#contact .contact-form input[type ='submit']{
-    background-color: #1ac056;
-    color: #fff;
-    width: auto;
-    text-transform: uppercase;
-    font-weight: 600;
-    padding: 15px 30px;
-    float: right;
-    border: 1px #1ac056 solod;
     
 }
-#contact .contact-form input[type ='submit']:hover{
+
+#contact .contact-social-icons a:hover {
+    color: #213b50;
+    border: 1px solid #213b50;
     background-color: #fff;
-    color: #1ac056;
 }
 
 footer {
