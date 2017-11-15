@@ -296,10 +296,21 @@ text-align: center;
     border: 1px solid #213b50;
     background-color: #fff;
 }
-#contact .col-sm-12,
+@media all and (max-width: 992px) {
+    #contact .col-sm-12,
+    #contact .col-12 {
+        text-align: center;
+    }
+    #contact .col-sm-12,
     #contact .col-12 h2 {
         text-align: center;
     }
+    #contact .col-sm-12,
+    #contact .col-12 input[type='submit'] {
+        float: none;
+    }
+
+}
 
 
 
